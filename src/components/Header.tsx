@@ -24,7 +24,8 @@ export function Header() {
 
   return (
     <header className="absolute inset-x-0 top-0 z-30">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 sm:px-8 lg:px-10 lg:py-7">
+      {/* AQUI ESTÁ A MUDANÇA: Troquei py-5 por pt-2 pb-4 (reduz o espaço no topo do mobile) */}
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 pt-2 pb-4 sm:px-8 lg:px-10 lg:py-7">
         <Link
           aria-label="Endolipo - página inicial"
           className="relative text-[2rem] font-medium leading-none tracking-[-0.075em] text-white sm:text-[2.35rem]"
