@@ -24,11 +24,12 @@ export function Header() {
 
   return (
     <header className="absolute inset-x-0 top-0 z-30">
-      {/* AQUI ESTÁ A MUDANÇA: Troquei py-5 por pt-2 pb-4 (reduz o espaço no topo do mobile) */}
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 pt-2 pb-4 sm:px-8 lg:px-10 lg:py-7">
+      {/* 1. MUDANÇA NO ESPAÇAMENTO: pt-1 empurra quase para o limite do topo do celular */}
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 pt-1 pb-4 sm:px-8 lg:px-10 lg:py-7">
         <Link
           aria-label="Endolipo - página inicial"
-          className="relative text-[2rem] font-medium leading-none tracking-[-0.075em] text-white sm:text-[2.35rem]"
+          {/* 2. MUDANÇA NA FONTE: text-[1.75rem] no mobile (era 2rem), mantendo sm:text-[2.35rem] no PC */}
+          className="relative text-[1.75rem] font-medium leading-none tracking-[-0.075em] text-white sm:text-[2.35rem]"
           href="/"
           onClick={() => setIsMenuOpen(false)}
         >
